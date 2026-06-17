@@ -1,4 +1,4 @@
-package feevale.br;
+package feevale.br.model;
 
 public class Item {
     private String nome;

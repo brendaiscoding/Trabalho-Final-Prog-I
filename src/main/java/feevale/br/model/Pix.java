@@ -1,4 +1,4 @@
-package feevale.br;
+package feevale.br.model;
 
 public class Pix implements MetodoPagamento {
     private String codigo;

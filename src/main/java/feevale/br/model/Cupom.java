@@ -1,4 +1,4 @@
-package feevale.br;
+package feevale.br.model;
 
 public class Cupom {
     private String codigo;

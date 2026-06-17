@@ -1,4 +1,4 @@
-package feevale.br;
+package feevale.br.model;
 
 public class Cartao implements MetodoPagamento {
     private String tipo; // "Crédito" ou "Débito"

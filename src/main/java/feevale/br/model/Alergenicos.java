@@ -1,4 +1,4 @@
-package feevale.br;
+package feevale.br.model;
 
 public class Alergenicos {
     private String nome;
