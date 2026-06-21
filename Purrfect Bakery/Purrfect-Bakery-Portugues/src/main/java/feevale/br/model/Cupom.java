@@ -13,6 +13,12 @@ public class Cupom {
         this.codigo = codigo;
         this.percentual = percentual;
     }
-    public String getCodigo() { return codigo; }
-    public double getPercentual() { return percentual; }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public double getPercentual() {
+        return percentual;
+    }
 }

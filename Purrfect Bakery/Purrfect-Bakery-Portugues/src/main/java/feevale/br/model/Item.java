@@ -22,22 +22,69 @@ public class Item {
     public Item(String nome, double preco, String tamanho, Categoria categoria, Alergenicos[] alergenicos) {
         this(nome, preco, tamanho, categoria, alergenicos, "🍞", "Produto da padaria");
     }
-    public Item(String nome, double preco, String tamanho, Categoria categoria, Alergenicos[] alergenicos, String icone, String descricao) {
-        this.nome = nome; this.preco = preco; this.tamanho = tamanho; this.categoria = categoria; this.alergenicos = alergenicos; this.icone = icone; this.descricao = descricao;
+
+    public Item(String nome, double preco, String tamanho, Categoria categoria, Alergenicos[] alergenicos, String icone,
+            String descricao) {
+        this.nome = nome;
+        this.preco = preco;
+        this.tamanho = tamanho;
+        this.categoria = categoria;
+        this.alergenicos = alergenicos;
+        this.icone = icone;
+        this.descricao = descricao;
     }
-    public String getNome() { return nome; }
-    public double getPreco() { return preco; }
-    public String getTamanho() { return tamanho; }
-    public Categoria getCategoria() { return categoria; }
-    public Alergenicos[] getAlergenicos() { return alergenicos; }
-    public String getIcone() { return icone; }
-    public String getDescricao() { return descricao; }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public String getTamanho() {
+        return tamanho;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public Alergenicos[] getAlergenicos() {
+        return alergenicos;
+    }
+
+    public String getIcone() {
+        return icone;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
     public String getEspecificacoes() {
         String alerg = "sem alérgenos cadastrados";
-        if (alergenicos != null && alergenicos.length > 0) alerg = Arrays.stream(alergenicos).map(Alergenicos::getNome).collect(Collectors.joining(", "));
+        if (alergenicos != null && alergenicos.length > 0)
+            alerg = Arrays.stream(alergenicos).map(Alergenicos::getNome).collect(Collectors.joining(", "));
         return tamanho + " • " + descricao + " • " + alerg;
     }
-    @Override public String toString() { return nome + " - R$ " + String.format("%.2f", preco); }
-    @Override public boolean equals(Object o) { if (this == o) return true; if (!(o instanceof Item item)) return false; return Objects.equals(nome, item.nome); }
-    @Override public int hashCode() { return Objects.hash(nome); }
+
+    @Override
+    public String toString() {
+        return nome + " - R$ " + String.format("%.2f", preco);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (!(o instanceof Item item))
+            return false;
+        return Objects.equals(nome, item.nome);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome);
+    }
 }

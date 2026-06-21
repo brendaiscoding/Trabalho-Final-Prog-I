@@ -9,8 +9,13 @@ package feevale.br.model;
 public class Pix implements MetodoPagamento {
     private String codigo;
 
-    public Pix(String codigo) { this.codigo = codigo; }
-    public String getCodigo() { return codigo; }
+    public Pix(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getCodigo() {
+        return codigo;
+    }
 
     @Override
     public void processarPagamento(String dados) {
