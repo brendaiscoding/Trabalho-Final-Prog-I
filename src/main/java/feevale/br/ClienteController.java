@@ -1,3 +1,6 @@
+/*
+ * Controller de uma tela FXML simples para o lado do cliente.
+ */
 package feevale.br;
 
 import javafx.collections.FXCollections;

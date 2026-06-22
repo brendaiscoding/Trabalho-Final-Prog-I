@@ -1,3 +1,8 @@
+/*
+ * Arquivo de configuração de módulos do Java.
+ *
+ * Informa quais módulos JavaFX o projeto usa e quais pacotes ficam acessíveis para o JavaFX/FXML.
+ */
 module feevale.br {
     requires javafx.controls;
     requires javafx.fxml;

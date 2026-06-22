@@ -1,3 +1,8 @@
+/*
+ * Modelo de cupom de desconto.
+ *
+ * Guarda o código do cupom e o percentual que será aplicado ao pedido.
+ */
 package feevale.br.model;
 
 public class Cupom {
@@ -8,6 +13,12 @@ public class Cupom {
         this.codigo = codigo;
         this.percentual = percentual;
     }
-    public String getCodigo() { return codigo; }
-    public double getPercentual() { return percentual; }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public double getPercentual() {
+        return percentual;
+    }
 }

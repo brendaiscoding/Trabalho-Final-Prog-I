@@ -1,3 +1,9 @@
+/*
+ * Controller FXML simples para o painel da cozinha.
+ *
+ * Mostra os atendimentos ativos e permite avançar o status do pedido.
+ * A versão mais completa da cozinha está implementada diretamente em App.java.
+ */
 package feevale.br;
 
 import javafx.fxml.FXML;

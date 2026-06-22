@@ -1,3 +1,9 @@
+/*
+ * Classe responsável por controlar os atendimentos do sistema.
+ *
+ * Usa o padrão Singleton para existir apenas uma instância central.
+ * Assim, cliente e cozinha acessam a mesma lista de pedidos ativos.
+ */
 package feevale.br.model;
 
 import javafx.collections.FXCollections;

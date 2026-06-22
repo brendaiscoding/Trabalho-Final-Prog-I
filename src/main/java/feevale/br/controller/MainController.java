@@ -1,3 +1,9 @@
+/*
+ * Controller FXML que junta cliente e cozinha em uma única tela simples.
+ *
+ * Também parece ser uma versão alternativa da interface, mantida no projeto
+ * como exemplo de integração entre cardápio, carrinho e cozinha.
+ */
 package feevale.br.controller;
 
 import javafx.collections.FXCollections;

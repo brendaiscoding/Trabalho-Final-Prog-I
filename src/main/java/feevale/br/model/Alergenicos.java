@@ -1,3 +1,8 @@
+/*
+ * Modelo que representa um alergênico do produto.
+ *
+ * Exemplo: glúten, lactose, ovos ou castanhas.
+ */
 package feevale.br.model;
 
 public class Alergenicos {

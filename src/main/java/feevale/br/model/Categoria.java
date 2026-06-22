@@ -1,3 +1,8 @@
+/*
+ * Modelo que representa uma categoria do cardápio.
+ *
+ * Exemplo: Bolos, Cupcakes, Croissants ou Sazonais.
+ */
 package feevale.br.model;
 
 public class Categoria {
