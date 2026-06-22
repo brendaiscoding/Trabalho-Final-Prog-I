@@ -169,7 +169,7 @@ public class App extends Application {
         VBox side = new VBox(7);
         side.setPrefWidth(104);
         side.setPadding(new Insets(6));
-        String[] cats = {"Popular", "Bolos", "Copocakes", "Croissants", "Gatinhos", "Sazonais"};
+        String[] cats = {"Popular", "Bolos", "Cupcakes", "Croissants", "Tematizados", "Sazonais"};
         for (String c : cats) side.getChildren().add(new Label("• " + c));
         side.setStyle("-fx-background-color: rgba(255,255,255,0.65); -fx-background-radius: 14; -fx-font-weight: bold; -fx-text-fill: #7A3A20;");
         root.setLeft(side);
@@ -450,7 +450,7 @@ public class App extends Application {
         Categoria bolos = new Categoria("Bolos");
         Categoria cupcakes = new Categoria("Cupcakes");
         Categoria croissants = new Categoria("Croissants");
-        Categoria gatinhos = new Categoria("Temáticos de Gatinho");
+        Categoria gatinhos = new Categoria("Tematizados");
         Categoria sazonais = new Categoria("Sazonais");
 
         Alergenicos gluten = new Alergenicos("gluten");
